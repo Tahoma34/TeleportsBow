@@ -1,0 +1,76 @@
+
+#####################################
+#  TeleportBow - Premium Edition    #
+#  by Tahoma34                      #
+#  Version: 1.9 - SNAPSHOT          #
+#####################################
+
+messages:
+  plugin_enabled: "&aПлагин TeleportBow включён!"
+  plugin_disabled: "&aПлагин TeleportBow выключен!"
+  not_player: "&c✖ Эта команда доступна только игрокам!"
+  no_permission: "&c✖ У вас нет прав использовать это!"
+  config_reloaded: "&a✔ Конфигурация перезагружена!"
+  already_have_bow: "&c✖ У вас уже есть Мега-Лук!"
+  no_inventory_space: "&c✖ Ваш инвентарь полон!"
+  bow_given: "&a✔ &fВы получили &eМега-Лук&f и одну стрелу!"
+  bow_removed: "&a✔ Мега-Лук убран!"
+  no_bow_to_remove: "&c✖ У вас нет Мега-Лука для удаления!"
+  cannot_drop_bow: "&c✖ Вы не можете выбросить этот предмет!"
+  cannot_store_bow: "&c✖ Вы не можете переложить этот предмет!"
+  sound_selector_title: "&0Выбор звука и эффекта"
+  sound_changed: "&a✔ Вы изменили звук!"
+  world_blacklisted: "&c✖ Лук не работает в этом мире!"
+  givebow_usage: "&cИспользование: /sbow givebow <игрок>"
+  gave_bow_to_player: "&a✔ Вы выдали Мега-Лук игроку: &f%player%"
+  givearrow_usage: "&cИспользование: /sbow givearrow <игрок>"
+  gave_arrow_to_player: "&a✔ Вы выдали стрелу игроку: &f%player%"
+  no_such_player: "&c✖ Игрок не найден!"
+  help_header: "&a----- &fСписок команд TeleportBow &a-----"
+  help_sbow_help: "&a/sbow &7- &fПоказать справку"
+  help_sbow_use: "&a/sbow use &7- &fВзять Мега-Лук и стрелы"
+  help_sbow_remove: "&a/sbow remove &7- &fУбрать Мега-Лук и стрелы"
+  help_sbow_gui: "&a/sbow gui &7- &fОткрыть выбор звуков и эффектов"
+  help_sbow_reload: "&a/sbow reload &7- &fПерезагрузить конфигурацию плагина"
+  help_sbow_givebow: "&a/sbow givebow <игрок> &7- &fВыдать Мега-Лук указанному игроку"
+  help_sbow_givearrow: "&a/sbow givearrow <игрок> &7- &fВыдать специальную стрелу указанному игроку"
+  help_sbow_removeplayer: "&a/sbow removeplayer <игрок> &7- &fЗабрать Мега-Лук и стрелы у другого игрока"
+
+bow:
+  name: "&e▰ &fМега-Лук &e▰"
+  lore:
+    - "&f"
+    - "&f Этот лук телепортирует вас"
+    - "&f к месту попадания стрелы"
+    - "&7 (Убрать лук: /sbow remove)"
+    - "&f"
+
+settings:
+  cooldown: 10 # Перезарядка в секундах
+  delay: 3 # Задержка перед телепортацией (если нужно)
+  blacklist_worlds: # Чёрный список миров
+    - world_nether
+    - world_the_end
+  give_on_join: true # Выдавать лук при входе на сервер
+
+sounds:
+  enderman:
+    name: "&e▪ &fМистические Эффекты"
+    sound: "ENTITY_ENDERMAN_TELEPORT"
+    effect: "PORTAL"
+    icon: "ENDER_PEARL"
+    slot: 12
+
+  portal:
+    name: "&e▪ &fОгненные Эффекты"
+    sound: "BLOCK_PORTAL_AMBIENT"
+    effect: "FLAME"
+    icon: "NETHER_STAR"
+    slot: 13
+
+  pling:
+    name: "&e▪ &fКолдующие Эффекты"
+    sound: "BLOCK_NOTE_BLOCK_PLING"
+    effect: "SPELL_WITCH"
+    icon: "NOTE_BLOCK"
+    slot: 14
